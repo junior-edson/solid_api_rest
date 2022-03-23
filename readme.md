@@ -8,9 +8,9 @@ Package by feature: Package-by-feature uses packages to reflect the feature set.
 
 
 ## SOLID principles applied
-- Single responsability principle: A class CreateUserUseCase tem uma única responsabilidade que é a criação do usuário. Para ela não importa como o usuário será salvo, ex.: database, json file, third party API... etc. A única responsabilidade que esta classe possui é verificar se o usuário existe e criá-lo.
+- Single responsability principle: A classe CreateUserUseCase tem uma única responsabilidade que é a criação do usuário. Para ela não importa como o usuário será salvo, ex.: database, json file, third party API... etc. A única responsabilidade que esta classe possui é verificar se o usuário existe e criá-lo.
 
-- Liskov substitution principle: Quando a classe recebe no userRepository um tipo IUsersRepository, uma interface, um contrato que define quais são os métodos que irão existir no repositório, não interessa qual repositório eu passar pra ele, ex.: postgres, mysql, mongo... etc, se houver esses métodos ele vai funcionar.
+- Liskov substitution principle: Quando a classe CreateUserUseCase recebe no userRepository um tipo IUsersRepository, uma interface, um contrato que define quais são os métodos que irão existir no repositório, não interessa qual repositório eu irei passar pra ela, ex.: postgres, mysql, mongo... etc, se houver esses métodos ele vai funcionar.
 
 - Dependency invertion principle: Eu recebo a interface ao invés de depender da sua implementação. Não há CRUD executado diretamente no CreateUserUseCase, estou dependendo de uma outra classe que faz a implementação. Dependo apenas da abstração dessa implementação.
 
