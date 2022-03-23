@@ -16,3 +16,12 @@ SOLID principles applied:
 
 
 OBS.: Desconectamos a camada de infraestrutura da camada de domínio. Todas as funcionalidades externas ficam abstraídas.
+
+
+Commands:
+    - yarn init -y
+    - yarn add express
+    - yarn add typescript ts-node-dev -D
+    - yarn tsc --init
+    - yarn add @types/express -D
+    - yarn add v4 (antigo uuidv4)
