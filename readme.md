@@ -8,14 +8,14 @@ Package by feature: Package-by-feature uses packages to reflect the feature set.
 
 
 ## SOLID principles applied
-- Single responsability principle: A classe CreateUserUseCase tem uma única responsabilidade que é a criação do usuário. Para ela não importa como o usuário será salvo, ex.: database, json file, third party API... etc. A única responsabilidade que esta classe possui é verificar se o usuário existe e criá-lo.
+- Single responsability principle: The CreateUserUseCase class has a single responsibility which is the creation of the user. It doesn't matter how the user will be saved, eg.: database, json file, third party API... etc. The only responsibility this class has is to check if the user exists and create it.
 
-- Liskov substitution principle: Quando a classe CreateUserUseCase recebe no userRepository um tipo IUsersRepository, uma interface, um contrato que define quais são os métodos que irão existir no repositório, não interessa qual repositório eu irei passar pra ela, ex.: postgres, mysql, mongo... etc, se houver esses métodos ele vai funcionar.
+- Liskov substitution principle: When the CreateUserUseCase class receives in the userRepository an IUsersRepository type, an interface, a contract that defines which methods will exist in the repository, it does not matter which repository I will pass to it, eg.: postgres, mysql, mongo... etc. , if there are these methods it will work.
 
-- Dependency invertion principle: Eu recebo a interface ao invés de depender da sua implementação. Não há CRUD executado diretamente no CreateUserUseCase, estou dependendo de uma outra classe que faz a implementação. Dependo apenas da abstração dessa implementação.
+- Dependency invertion principle: I get the interface rather than depending on its implementation. There is no CRUD executed directly in CreateUserUseCase, I'm depending on another class that does the implementation. I just depend on the abstraction of this implementation.
 
 
-OBS.: Desconectamos a camada de infraestrutura da camada de domínio. Todas as funcionalidades externas ficam abstraídas.
+ps.: We detach the infrastructure layer from the domain layer. All external functionality is abstracted.
 
 
 ## Commands
