@@ -3,8 +3,8 @@
 
 
 ## Application features
--   [v] Create a new user
--   [v] Send e-mail when a new user is created
+-   [x] Create a new user
+-   [x] Send e-mail when a new user is created
 
 
 ## SOLID principles applied
