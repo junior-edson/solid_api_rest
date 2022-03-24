@@ -1,4 +1,4 @@
-## Design pattern
+## Architecture applied (for microservices)
 Package by feature: Package-by-feature uses packages to reflect the feature set. It tries to place all items related to a single feature (and only that feature) into a single directory/package. This results in packages with high cohesion and high modularity, and with minimal coupling between packages.
 
 
@@ -24,4 +24,4 @@ ps.: We detach the infrastructure layer from the domain layer. All external func
 - yarn add typescript ts-node-dev -D
 - yarn tsc --init
 - yarn add @types/express -D
-- yarn add v4 (antigo uuidv4)
+- yarn add uuidv4
