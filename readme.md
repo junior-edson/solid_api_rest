@@ -26,4 +26,4 @@ ps.: We detach the infrastructure layer from the domain layer. All external func
 - yarn add @types/express -D
 - yarn add uuidv4
 - yarn add nodemailer
-- yarn add @types/nodemailer
+- yarn add @types/nodemailer -D
